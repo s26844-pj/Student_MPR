@@ -1,0 +1,5 @@
+*/ new project -> spring initializer -> gradle-Kotlin -> next -> Web ->  spring web
+1. będziemy chcieli dodać lomboka - wygooglowac - project lombok -install-gradle- kopiujemy po compileOnly do build.gradle.kts w dependencies pod implemetation
+oraz annotation processor też kopiujemy
+2. java-com-example-powtórka klikamy prawym-new package i tworzymy model,service,repository,
+3. new java class w model - student

@@ -2,4 +2,110 @@
 1. będziemy chcieli dodać lomboka - wygooglowac - project lombok -install-gradle- kopiujemy po compileOnly do build.gradle.kts w dependencies pod implemetation
 oraz annotation processor też kopiujemy
 2. java-com-example-powtórka klikamy prawym-new package i tworzymy model,service,repository,
-3. new java class w model - student
+3. new java class w model - student tworzymy klase student, numer indeksu, imię, nazwisko,
+metode data  i allarg constructor w lomboku opisane są w drugiej zakładce
+4. tworzymy java class student repository w repository
+tworzymy array liste i wpisujemy importy i adnotację repository
+tworzymy metode która zwróci studenta i bedzie go zapisywała w dziekanacie
+możemy mu dać id na podstwie rozmiaru listy
+dodajemy do listy
+zwracamy
+servixce nowa java class Student serwice ma tworzyc obiekt
+walidacja ze jeśli jest nullem nazwa studenta lub blank to...
+robimy folder exception new java clas validationexceptions
+dziedziczy po runtimeexception
+konstruktor string message
+wrcamy do student service
+throw new validation exception
+dla nazwiska robimy podobnie 
+
+wstrzykjemy zakeżność repozyturium  private StudentRepository studentRepository;
+dodajemy konstruktor @allargsConstructor
+robimy return studentRepository zeby nam zwróciło
+
+na nazwie klasy public class StudentService ALT+enter create test, ok
+
+dodajemy nasz obiekt private student service stud...
+studenrepository
+funkcja public void setup która utworzy nam obiekty które wstrzykujemy
+dodaje @beforeall zeby setup wykonał się przed wszytkimi testami i tylko jeden raz
+
+pierwszy test na pozytywny secariusz
+akredytacja @test 
+void
+tworzymy pierwszą asercję assertDoesNotThrow
+wynik operacji przypisuje się do jakiejs zmiennej i jednoczesnie assercja ze nie poleci zaden wyjątek
+kolejne asercje ze name moze być takie samo i nazwisko
+
+kolejny test kolejny przypadek negatywny scenariusz
+
+tworzymy kontroler new package i new java 2;35
+
+
+otwieramy w google openapi spring boot
+openapi3 springdoc-openapi v2.3.0
+getting started 
+
+implementacja jest dla gravena wiec trzeba troche przekształcić
+build gradle kts -> implementation org.spribdoc:sp...
+
+
+wejdz powtórka application na przycisk play przypublic class Powtórka i RUN
+
+
+google local host swagger i pokaze się student controler metodą post
+id usuwamy nie trzeba a name za stringa podajemy
+
+na public class Student Controler alt enter create test i tworzymy test integracyjny
+
+build gradle kts biblioteka ze springa zamieniamy test na webflux
+
+
+controller -> studentcontroller test 
+@springboottest weben. random
+@autoconfigure
+
+chcemy uzyc webtestclient 
+autowired 
+rstudent trepository 
+autowired
+object mapper
+@test
+zrobimy tes void shouldtest
+i musuy stworzyć ten obiekt 
+objectMapper.writevalue
+w
+webtestclient.post ze ścieżka
+ustalamy ze to json 
+oraz wskazujemy body potem odowałnie requestu i exception status
+expect body to ma zwrócić obiekt klasy student i zapisujemy sobie wynik do zmiennej
+
+robimy assercje ze result porównuje imiona
+i nazwiska
+
+jedna sciezke mamy gotowa wiec teraz opcja ze zwraca wszystko
+public list student findall w student repository
+
+student service przekazanie 
+public list<student> findall
+i co przyjdzie to bez zadnych operacji
+
+tak samo w studcontrolle @getmapping
+response entity list stud
+return response ze statusem ok
+
+na to test integracyjny bo jednostkowy raczej nie
+studcontrtest
+jak kolekcja to expec body list a nie body
+pierwszy studenk ktory podalismy równy student
+2ga assercja ze rozmiar tej kolekcji będzie rówy 1
+
+czyszczenie bazy danych
+ public clenUp w stud contr test @beforeeach stud repo delete all
+potem ta funkcja w stud repo nowa lista
+
+dodanie Zallstudents aby ostatnia sie wykonała bo decyduje kolejnośc alfabetyczna55 linia stud contr test
+
+
+
+
